@@ -3,24 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portada - Mi Tienda Virtual</title>
-    <link rel="stylesheet" href="style.css"> </head>
+    <title>Document</title>
+</head>
 <body>
+    <h1>Finalizar Compra</h1>
 
-    <section class="hero-portada">
-        <div class="hero-overlay"></div>
+    <hr>
 
-        <div class="hero-content">
-            <h1>Descubre la Nueva Prendas de MEN'S CLOTHING 2025</h1>
-            <p>Prendas únicas diseñadas para tu estilo y confort.</p>
-            <a href="#productos" class="btn-cta">Explorar Ahora</a>
-            </div>
+    <section id="resumen-pedido">
+        <h2>Resumen de tu Pedido</h2>
+        <table border="1"> <thead>
+                <tr>
+                    <th>Producto</th>
+                    <th>Cantidad</th>
+                    <th>Precio Unitario</th>
+                    <th>Subtotal</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Camisa Casual Azul</td>
+                    <td>1</td>
+                    <td>S/ 79.90</td>
+                    <td>S/ 79.90</td>
+                </tr>
+                <tr>
+                    <td>Pantalón Chino Beige</td>
+                    <td>1</td>
+                    <td>S/ 110.00</td>
+                    <td>S/ 110.00</td>
+                </tr>
+                </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">Subtotal</td>
+                    <td>S/ 189.90</td>
+                </tr>
+                <tr>
+                    <td colspan="3">Envío</td>
+                    <td>S/ 10.00</td> </tr>
+                <tr>
+                    <td colspan="3"><strong>Total General</strong></td>
+                    <td><strong>S/ 199.90</strong></td>
+                </tr>
+            </tfoot>
+        </table>
     </section>
+    <img src="Imagen de WhatsApp 2025-04-15 a las 01.08.58_49ffb87d.jpg" alt="Pantalon Beige" width="150em" height="150em">
+    <img src="Imagen de WhatsApp 2025-04-15 a las 01.09.56_251f5976.jpg" alt="Camisa azul" width="150em" height="150em">
 
-    <section id="productos" style="padding: 50px; height: 100vh; background-color: #f0f0f0;">
-        <h2>Nuestros Productos</h2>
-        <p>Aquí se mostrarían los productos...</p>
-        </section>
+    <hr>
 
+    <form action="#" method="post"> <fieldset>
+            <legend>Dirección de Envío</legend>
+
+            <label for="nombre">Nombre Completo:</label><br>
+            <input type="text" id="nombre" name="nombre" required><br><br>
+
+            <label for="direccion">Dirección:</label><br>
+            <input type="text" id="direccion" name="direccion" placeholder="Calle, Número, Urbanización..." required><br><br>
+
+            <label for="ciudad">Ciudad:</label><br>
+            <input type="text" id="ciudad" name="ciudad" value="Lima" required><br><br> <label for="distrito">Distrito:</label><br>
+            <input type="text" id="distrito" name="distrito" value="Comas" required><br><br> <label for="codigo_postal">Código Postal:</label><br>
+            <input type="text" id="codigo_postal" name="codigo_postal" pattern="[0-9]*"><br><br>
+
+            <label for="telefono">Teléfono:</label><br>
+            <input type="tel" id="telefono" name="telefono" required><br><br>
+
+             <label for="email">Correo Electrónico:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+        </fieldset>
+
+        <br> <fieldset>
+            <legend>Información de Pago</legend>
+
+            <p><strong>Método de Pago:</strong> Tarjeta de Crédito/Débito</p>
+
+            <label for="tarjeta_numero">Número de Tarjeta:</label><br>
+            <input type="text" id="tarjeta_numero" name="tarjeta_numero" placeholder="---- ---- ---- ----" pattern="[0-9 ]+" required><br><br>
+
+            <label for="tarjeta_nombre">Nombre en la Tarjeta:</label><br>
+            <input type="text" id="tarjeta_nombre" name="tarjeta_nombre" required><br><br>
+
+            <label for="tarjeta_expira">Fecha de Expiración (MM/AA):</label><br>
+            <input type="text" id="tarjeta_expira" name="tarjeta_expira" placeholder="MM/AA" pattern="(0[1-9]|1[0-2])\/?([0-9]{2})" required><br><br>
+
+            <label for="tarjeta_cvv">CVV:</label><br>
+            <input type="text" id="tarjeta_cvv" name="tarjeta_cvv" placeholder="123" pattern="[0-9]{3,4}" required><br><br>
+
+             <input type="checkbox" id="terminos" name="terminos" required>
+             <label for="terminos">Acepto los <a href="#">Términos y Condiciones</a></label><br><br>
+
+        </fieldset>
+
+        <hr>
+
+        <button type="submit">Realizar Pedido</button>
+
+    </form>
+
+    <hr>
+
+    <footer>
+        <p>&copy; 2025 MEN´S CLOTHING - Todos los derechos reservados.</p> </footer>
+
+</body>
+</html>
+    
 </body>
 </html>
